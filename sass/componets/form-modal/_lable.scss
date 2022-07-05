@@ -1,0 +1,16 @@
+.form-modal__lable {
+    display: block;
+    padding: 0px 40px 10px;
+}
+
+.form-modal__text {
+    display: block;
+    padding-bottom: 4px;
+
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}

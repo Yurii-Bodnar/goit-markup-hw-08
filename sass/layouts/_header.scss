@@ -1,0 +1,140 @@
+/* Header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: var(--main-black-color);
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &__accent {
+    color: var(--accent-color);
+  }
+
+  &__text {
+    color: var(--main-white-color);
+  }
+}
+
+/* Site-navigation */
+.navigation__list {
+  display: flex;
+  margin-left: 93px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.navigation__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--curent {
+    color: var(--accent-color);
+    position: relative;
+  }
+  &--curent::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-10);
+
+    background-color: var(--accent-color);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+  }
+}
+
+.contact__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+
+  .contact__item:last-child {
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 1279px) {
+    flex-direction: column;
+    .contact__item:last-child {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.contact__icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.contact__telephone {
+  display: flex;
+  align-items: center;
+  transition: var(--anim);
+}
+.contact__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.contact__icon-smartphone {
+  width: 10px;
+  height: 16px;
+}

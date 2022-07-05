@@ -1,0 +1,10 @@
+.container-mailing {
+  margin-left: inherit;
+}
+
+.form-mailing {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}

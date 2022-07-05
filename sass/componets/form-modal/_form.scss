@@ -1,0 +1,16 @@
+.form-modal__title {
+    padding: 40px 40px 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-black-color);
+}
+.form-modal__button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

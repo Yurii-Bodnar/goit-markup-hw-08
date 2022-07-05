@@ -1,0 +1,131 @@
+/* Footer */
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: var(--hero-footer-backgraund-color);
+  text-decoration: none;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 1280px) {
+    &__contact,
+    .link-container,
+    .container-mailing {
+      text-align: center;
+    }
+    .container-mailing {
+      width: 100%;
+    }
+    &__contact,
+    .link-container {
+      width: 50%;
+      margin-bottom: 60px;
+    }
+    .link-container {
+      margin-left: 0;
+      &__list {
+        justify-content: center;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__contact,
+    .link-container {
+      width: 100%;
+    }
+  }
+}
+
+/* footer adress */
+.address__item {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.address__link-map {
+  color: var(--main-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__item-communication {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  color: var(--contacts-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* Links */
+.link-container {
+  margin-left: 70px;
+}
+
+.main-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
+}
+
+.link-container__list {
+  display: flex;
+
+  & .link-container__item + .link-container__item {
+    margin-left: 10px;
+  }
+}
+
+.link-container__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--main-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.link-container__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

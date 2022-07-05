@@ -1,0 +1,109 @@
+.main-button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--main-white-color);
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal__button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  visibility: visible;
+  pointer-events: visible;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: var(--main-white-color);
+  cursor: pointer;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.button-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.list-filters__button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  border-width: 0;
+  color: var(--main-black-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: var(--section-team-background-color);
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background: var(--accent-color);
+  }
+}
+
+.mobile-menu__btn {
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+
+  &:hover .mobile-menu__icon-close,
+  &:focus .mobile-menu__icon-close {
+    fill: var(--accent-color);
+  }
+  &:hover .mobile-menu__icon-menu,
+  &:focus .mobile-menu__icon-menu {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .mobile-menu__icon-close {
+    opacity: 0;
+  }
+  &.is-open {
+    .mobile-menu__icon-close {
+      opacity: 1;
+    }
+    .mobile-menu__icon-menu {
+      opacity: 0;
+    }
+  }
+}

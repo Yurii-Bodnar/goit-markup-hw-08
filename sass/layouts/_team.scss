@@ -1,0 +1,124 @@
+/* Our team */
+.section__title {
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  color: var(--main-black-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}
+.teams-title {
+  background: var(--section-team-background-color);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .team-list__item + .team-list__item {
+    @media screen and (min-width: 1280px) {
+      margin-left: 30px;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+      &:nth-child(2n) {
+        margin-left: 30px;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    display: block;
+    @media screen and (max-width: 1280px) {
+      width: 355px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 450px;
+    }
+  }
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: var(--main-black-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
+
+  &__item {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--main-white-color);
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.list-person-contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.list-person-contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--main-white-color);
+  }
+}
+
+.list-person-contacts__item + .list-person-contacts__item {
+  margin-left: 10px;
+}
+
+.list-person-contacts__logo {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

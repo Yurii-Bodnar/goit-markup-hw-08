@@ -1,0 +1,55 @@
+.form-modal__checkbox {
+  display: flex;
+  padding: 10px 40px 30px 40px;
+  align-items: center;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 50px;
+  }
+}
+
+.form-modal__icon-checkbox,
+.form-modal__icon-checked {
+  width: 16px;
+  height: 16px;
+}
+
+.form-modal__icon-checkbox {
+  visibility: visible;
+}
+
+.form-modal__container-icon {
+  background-color: var(--accent-color);
+  width: 0;
+  height: 16px;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.form-modal__input-checkbox {
+  visibility: hidden;
+  width: 0;
+
+  &:checked ~ .form-modal__icon-checkbox {
+    visibility: hidden;
+    width: 0;
+  }
+
+  &:checked ~ .form-modal__container-icon {
+    visibility: visible;
+    width: 16px;
+  }
+}
+
+.form-modal__icon-checked {
+  fill: var(--main-white-color);
+}
+
+.form-modal__checkbox-text {
+  padding: 0;
+  margin-left: 9px;
+}
+
+.form-modal__link {
+  color: var(--accent-color);
+}
