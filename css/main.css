@@ -281,7 +281,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .form-mailing__input {
     width: 450px;
     margin-right: 0;
@@ -620,7 +620,6 @@ img {
 @media screen and (max-width: 767px) {
   .navigation {
     height: 60px;
-    max-width: 767px;
   }
 }
 
@@ -710,6 +709,11 @@ img {
   -webkit-transition: var(--anim);
   transition: var(--anim);
 }
+@media screen and (max-width: 1279px) {
+  .contact__link {
+    font-size: 12px;
+  }
+}
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
@@ -776,19 +780,22 @@ img {
 
 /* Main Эффективные решения для вашего бизнеса */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 120px 0;
   text-align: center;
   background-color: var(--main-black-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img-sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img-sm.jpg);
-  height: 600px;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1211,6 +1218,10 @@ img {
       flex-wrap: wrap;
 }
 @media screen and (max-width: 1279px) {
+  .main-footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .main-footer__contact,
 .main-footer .link-container,
 .main-footer .container-mailing {
@@ -1224,7 +1235,7 @@ img {
     margin-bottom: 60px;
   }
   .main-footer .link-container {
-    margin-left: auto;
+    margin-left: 0;
   }
   .main-footer .link-container__list {
     -webkit-box-pack: center;

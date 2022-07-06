@@ -12,6 +12,9 @@
     flex-wrap: wrap;
   }
   @media screen and (max-width: 1279px) {
+    &__container {
+      justify-content: space-around;
+    }
     &__contact,
     .link-container,
     .container-mailing {
@@ -22,11 +25,10 @@
     }
     &__contact,
     .link-container {
-      // width: 50%;
       margin-bottom: 60px;
     }
     .link-container {
-      margin-left: auto;
+      margin-left: 0;
       &__list {
         justify-content: center;
       }

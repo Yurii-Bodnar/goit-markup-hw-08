@@ -1,8 +1,10 @@
 /* Main Эффективные решения для вашего бизнеса */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 120px 0;
   text-align: center;
+  @media screen and (min-width: 1280px) {
+    padding: 200px 0;
+  }
   background-color: var(--main-black-color);
   background-image: linear-gradient(
       to right,
@@ -21,6 +23,7 @@
       ),
       url(../images/hero/header_img@2x-sm.jpg);
   }
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
@@ -59,7 +62,6 @@
       ),
       url(../images/hero/img@2x-lg.jpg);
   }
-  height: 600px;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
