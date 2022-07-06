@@ -11,7 +11,7 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     &__contact,
     .link-container,
     .container-mailing {
@@ -22,11 +22,11 @@
     }
     &__contact,
     .link-container {
-      width: 50%;
+      // width: 50%;
       margin-bottom: 60px;
     }
     .link-container {
-      margin-left: 0;
+      margin-left: auto;
       &__list {
         justify-content: center;
       }

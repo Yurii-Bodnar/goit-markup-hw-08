@@ -1,6 +1,6 @@
 /* Our team */
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
 
   color: var(--main-black-color);
@@ -11,6 +11,7 @@
   text-align: center;
   @media screen and (min-width: 1280px) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .teams-title {
@@ -45,11 +46,11 @@
   }
   &__icon {
     display: block;
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1279px) {
       width: 355px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       width: 450px;
     }
   }
